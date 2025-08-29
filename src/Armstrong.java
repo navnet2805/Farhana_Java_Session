@@ -37,10 +37,10 @@ public class Armstrong {
         //153 == 153 ---> the number 153 is armstrong
         if (Original_num==result)
         {
-            System.out.println("the number is armstrong");
+            System.out.println("the number " + Original_num + " is armstrong");
         }
         else
-            System.out.println("the number is not armstrong");
+            System.out.println("the number " + Original_num + " is not armstrong");
 
     }
 }
