@@ -29,11 +29,11 @@ public class mobile {
 //        new mobile().display = 6.2;
 
         //-- Object is created 1st and then the values are assigned to it
-        mobile SamsungS24Ultra5g = new mobile();
-        SamsungS24Ultra5g.ram = 8;
-        SamsungS24Ultra5g.rom = 128;
-        SamsungS24Ultra5g.camera= 108;
-        SamsungS24Ultra5g.display=6.79;
+//        mobile SamsungS24Ultra5g = new mobile();
+//        SamsungS24Ultra5g.ram = 8;
+//        SamsungS24Ultra5g.rom = 128;
+//        SamsungS24Ultra5g.camera= 108;
+//        SamsungS24Ultra5g.display=6.79;
 
         mobile SamsungS24Ultra5g1 = new mobile(8,128,108,6.79);
         System.out.println("Samsung ram: "+SamsungS24Ultra5g1.ram); //using the mobile
