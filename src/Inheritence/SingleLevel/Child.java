@@ -1,4 +1,4 @@
-package Inheritence;
+package Inheritence.SingleLevel;
 
 public class Child extends Parent {
 
