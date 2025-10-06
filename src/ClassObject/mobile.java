@@ -2,7 +2,7 @@ package ClassObject;
 
 public class mobile {
 
-    //features --- consider this is mobile class.
+    //features --- consider this is mobile class. || global variable
     int ram, rom, camera;
     double display;
 
@@ -39,12 +39,6 @@ public class mobile {
         System.out.println("Samsung ram: "+SamsungS24Ultra5g1.ram); //using the mobile
         mobile iphone = new mobile(1,1,48,6.6);
         System.out.println("iphone ram: "+iphone.ram);
-
-
-
-
-
-
 
     }
 
