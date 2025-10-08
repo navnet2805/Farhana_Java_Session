@@ -2,37 +2,34 @@ package ConstructorChaining;
 
 public class thismethod {
 
-    int a;
-    char b;
-    long c;
-
     thismethod()
     {
-        this(4);
-        System.out.println("from default");
+        this(3);
+        System.out.println("default constructor");
     }
 
     thismethod(int a)
     {
+        this(2,3);
+        System.out.println("1 param integer constructor: "+a);
+    }
+
+    thismethod(int a, int b)
+    {
         this('g');
-        System.out.println("from a");
+        System.out.println("2 param constructor "+a+" , "+b);
     }
 
-    thismethod(char b)
+
+    thismethod(char c)
     {
-        this("Java");
-        System.out.println("from b");
+        System.out.println("1 param char constructor: "+c);
     }
-
-    thismethod(String c)
-    {
-        System.out.println("from c");
-    }
-
 
     public static void main(String[] args) {
-        thismethod obj = new thismethod();
-
-
+        new thismethod();
+//        new thismethod(4);
+//        new thismethod(5,8);
+//        new thismethod('f');
     }
 }
