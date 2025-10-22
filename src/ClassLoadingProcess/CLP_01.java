@@ -4,7 +4,13 @@ public class CLP_01 {
 
     CLP_01()
     {
-        System.out.println("from constructor");
+        this(4);
+        System.out.println("from parent default constructor");
+    }
+
+    CLP_01(int a)
+    {
+        System.out.println("from parent 1 param constructor");
     }
     //members of a class: variables , blocks and methods
 
@@ -15,13 +21,13 @@ public class CLP_01 {
     //2.Static blocks
     static
     {
-        System.out.println("from a static block");
+        System.out.println("from parent static block");
     }
 
     //3.Static methods
     public static void smethod()
     {
-        System.out.println("from static method");
+        System.out.println("from parent static method");
     }
 
     //Non-Static members
@@ -30,20 +36,19 @@ public class CLP_01 {
 
     //2.Non-Static blocks
     {
-        System.out.println("from a non static block");
+        System.out.println("from parent a non static block");
     }
 
     //3.Non-Static methods
     public void nsmethod()
     {
-        System.out.println("from a non static method");
+        System.out.println("from parent a non static method");
     }
 
     public static void main(String[] args) {
       CLP_01 obj = new CLP_01();
       obj.nsmethod();
       obj.smethod();
-      CLP_01 obj1 = new CLP_01();
 
     }
 
