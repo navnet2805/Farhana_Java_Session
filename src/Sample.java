@@ -5,22 +5,16 @@ import java.util.Set;
 
 public class Sample {
     public static void main(String[] args) {
-       String s = "traffic";
-       HashMap<Character,Integer> m = new HashMap<>(); //empty map
-
-       for (char c : s.toCharArray())
+       int num1 = 0;
+       int num2 = 1;
+        System.out.print(num1 +" " +num2 + " ");
+       for (int i=1 ; i<=12 ; i++)
        {
-           int old = m.getOrDefault(c,0);
-           m.put(c,old+1);
+           int num3 = num1 + num2;
+           num1 = num2;
+           num2 = num3;
+           System.out.print(num3 +" ");
        }
-
-       //onlu unique character
-        for (java.util.Map.Entry<Character,Integer> map : m.entrySet())
-        {
-            if (map.getValue()==1)
-                System.out.println(map.getKey());
-        }
-
 
 
     }
